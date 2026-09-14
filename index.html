@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AVE学习中心 - 产品教程、交易进阶、专题课程" />
+    <title>AVE学习中心</title>
+    <style>
+      html.dark { background-color: #080A0E; color: #fff; }
+      html.dark body { background-color: #080A0E; }
+      html.dark.android { background-color: #21262F; }
+      html.dark.android body { background-color: #21262F; }
+    </style>
+    <script type="module" crossorigin src="/assets/index-BDiB-NAp.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CVNlH-sj.css">
+  </head>
+  <body>
+    <script>
+      if (new URLSearchParams(window.location.search).get('mode') === 'dark') {
+        document.documentElement.classList.add('dark')
+        if (/android/i.test(navigator.userAgent)) {
+          document.documentElement.classList.add('android')
+        }
+      }
+    </script>
+    <div id="app"></div>
+  </body>
+</html>
